@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 300vh;
+}
+
+a{
+    text-decoration: none!important;
+}
+
+li{
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.badge{
+    background-color: rgb(106, 106, 211);
+
+}
+
+.left{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left span{
+    margin: 15px;
+    padding: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Drop Zone */
+.right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.right p{
+    color: whitesmoke;
+}
+
+.dropZone{
+    height: 300px;
+    background-color: teal;
+    border-radius: 10px;
+    width: 47%;
+    margin-top: 1rem;
+    color: whitesmoke;
+}
+
+.dropZone p{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.dropZone span{
+    padding: 1rem;
+    border: 1px solid whitesmoke ;
+}
+
+
+/* Desktop */
+
+#onlyDesktop{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 770px) {
+    .container {
+      display: none;
+    }
+    #onlyDesktop{
+        display: block;
+    }
+}
+
